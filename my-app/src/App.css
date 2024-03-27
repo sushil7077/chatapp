@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #0c1559;
-  min-height: 600px;
+  min-height: 791px;
 }
 
 .header-item {
@@ -133,7 +133,7 @@
   min-width: 600px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 16px;
 }
 
 .chat-window-header {
@@ -211,11 +211,28 @@ hr {
   border-top-width: 2px;
 }
 
+.chat-window-message-send-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: -webkit-fill-available;
+  border-top: 1px solid #5c5252;
+}
+
+.chat-window-message-container {
+  max-height: calc(100vh - 199px);
+  min-height: 600px;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
 .chat-window-send-message-container {
   display: flex;
-  margin: 15px 0px 0px;
+  padding: 15px 0px 0px;
   justify-content: space-between;
-  height: 70px;
+  height: 85px;
+  border-top: 1px solid #5c5252;
 }
 
 .chat-window-input-container {

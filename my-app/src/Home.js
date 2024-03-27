@@ -137,109 +137,113 @@ const Home = () => {
             </div>
           </div>
           <hr />
-          <div className="chat-window-message">
-            <div className="chat-window-profile">
-              <img
-                className="profile-image"
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
-              />
-            </div>
-            <div className="chat-conainer">
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
+          <div className="chat-window-message-send-container">
+            <div className="chat-window-message-container">
+              <div className="chat-window-message">
+                <div className="chat-window-profile">
+                  <img
+                    className="profile-image"
+                    src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
+                  />
+                </div>
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message right">
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content redcolor">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message">
+                <div className="chat-window-profile">
+                  <img
+                    className="profile-image"
+                    src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
+                  />
+                </div>
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message right">
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content redcolor">
+                    <p>This is Message</p>
+                  </div>
+                  <div className="chat-window-message-content redcolor">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message right">
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content redcolor">
+                    <p>This is Message</p>
+                  </div>
+                  <div className="chat-window-message-content redcolor">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message">
+                <div className="chat-window-profile">
+                  <img
+                    className="profile-image"
+                    src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
+                  />
+                </div>
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-window-message">
+                <div className="chat-window-profile">
+                  <img
+                    className="profile-image"
+                    src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
+                  />
+                </div>
+                <div className="chat-conainer">
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                  <div className="chat-window-message-content">
+                    <p>This is Message</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="chat-window-message right">
-            <div className="chat-conainer">
-              <div className="chat-window-message-content redcolor">
-                <p>This is Message</p>
+            <div className="chat-window-send-message-container">
+              {/* <hr /> */}
+              <div className="chat-window-input-container">
+                <input
+                  className="chat-window-input"
+                  type="text"
+                  placeholder="Type Message Here..."
+                />
               </div>
-            </div>
-          </div>
-          <div className="chat-window-message">
-            <div className="chat-window-profile">
-              <img
-                className="profile-image"
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
-              />
-            </div>
-            <div className="chat-conainer">
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-            </div>
-          </div>
-          <div className="chat-window-message right">
-            <div className="chat-conainer">
-              <div className="chat-window-message-content redcolor">
-                <p>This is Message</p>
-              </div>
-              <div className="chat-window-message-content redcolor">
-                <p>This is Message</p>
-              </div>
-            </div>
-          </div>
-          <div className="chat-window-message right">
-            <div className="chat-conainer">
-              <div className="chat-window-message-content redcolor">
-                <p>This is Message</p>
-              </div>
-              <div className="chat-window-message-content redcolor">
-                <p>This is Message</p>
-              </div>
-            </div>
-          </div>
-          <div className="chat-window-message">
-            <div className="chat-window-profile">
-              <img
-                className="profile-image"
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
-              />
-            </div>
-            <div className="chat-conainer">
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-            </div>
-          </div>
-          <div className="chat-window-message">
-            <div className="chat-window-profile">
-              <img
-                className="profile-image"
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"
-              />
-            </div>
-            <div className="chat-conainer">
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-              <div className="chat-window-message-content">
-                <p>This is Message</p>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div className="chat-window-send-message-container">
-            <div className="chat-window-input-container">
-              <input
-                className="chat-window-input"
-                type="text"
-                placeholder="Type Message Here..."
-              />
-            </div>
-            <div className="chat-window-send">
-              <div className="chat-window-send-icons">
-                <ImAttachment />
-              </div>
-              <div className="chat-window-send-icons redcolor">
-                <IoIosSend />
+              <div className="chat-window-send">
+                <div className="chat-window-send-icons">
+                  <ImAttachment />
+                </div>
+                <div className="chat-window-send-icons redcolor">
+                  <IoIosSend />
+                </div>
               </div>
             </div>
           </div>
