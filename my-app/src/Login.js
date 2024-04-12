@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { getTokenByLogin } from "./api/Login";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -12,8 +13,11 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const res = await getTokenByLogin(username, password);
+
+    console.log("res res", res);
     // Handle form submission here, e.g., call an API or authenticate user
     console.log("Username:", username);
     console.log("Password:", password);
