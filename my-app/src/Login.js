@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { getTokenByLogin } from "./api/Login";
+import "./Login.css";
+import Alert from "./Components/Alert";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState({ showError: false, message: "" });
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -15,12 +18,16 @@ const Login = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const res = await getTokenByLogin(username, password);
-
-    console.log("res res", res);
-    // Handle form submission here, e.g., call an API or authenticate user
-    console.log("Username:", username);
-    console.log("Password:", password);
+    try {
+      setError({ showError: false, message: "" });
+      const { data } = await getTokenByLogin(username, password);
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        window.location.href = "/";
+      }
+    } catch (err) {
+      setError({ showError: true, message: err.response.statusText });
+    }
   };
   return (
     <>
@@ -66,6 +73,14 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+      {error.showError && (
+        <Alert
+          message={error.message}
+          onClose={() => setError({ showError: false, message: "" })}
+          isOpen={error.showError}
+        />
+      )}
     </>
   );
 };
